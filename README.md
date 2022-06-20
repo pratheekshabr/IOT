@@ -70,7 +70,29 @@ void setup() {<br>
   }<br>
   ![image](https://user-images.githubusercontent.com/97940277/174584875-35b401b7-55e5-4a0f-9f1f-1b2b7272c518.png)<br>
 
-   
+ <b> servo motor and slide potentiometer</b><br><br>
+  #include <Servo.h><br>
+Servo Servo1;<br>
+int potpin=A0;<br>
+int val;<br>
+
+void setup()<br>
+{<br>
+  Servo1.attach(3);<br>
+}<br>
+void loop()<br>
+{<br>
+ val=analogRead(potpin);<br>
+ val=map(val,A0,1023,0,180);<br>
+ Servo1.write(val);<br>
+ delay(15);<br>
+}<br>
+output:<br>
+![image](https://user-images.githubusercontent.com/97940277/174588958-e1243d5b-fd7e-4f3a-b3a1-ff40647dadcd.png)<br>
+
+
+
+
   
 
 
