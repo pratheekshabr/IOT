@@ -22,7 +22,7 @@ delay(1000);<br>
 ![image](https://user-images.githubusercontent.com/97940277/174572324-03480b82-d883-404c-9309-0e20fb32557c.png)<br>
 
 **************************************
-4.servo motor<b></b><br>
+4.<b>servo motor</b><br>
 #include <Servo.h><br>
 int servopin=3;<br>
 Servo Servo1;<br>
