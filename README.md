@@ -91,7 +91,7 @@ output:<br>
 ![image](https://user-images.githubusercontent.com/97940277/174588958-e1243d5b-fd7e-4f3a-b3a1-ff40647dadcd.png)<br>
 
 
-5.Buzzer arduino resistor<br>
+5.<b>Buzzer arduino resistor</b><br>
 void setup() {pinMode(5, OUTPUT);<br>
   // put your setup code here, to run once:<br>
 
