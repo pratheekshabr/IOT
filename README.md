@@ -140,6 +140,51 @@ void loop() {<br>
 
 }<br>
 ![image](https://user-images.githubusercontent.com/97940277/174771113-952423cd-a099-4c5d-976d-09ac6ca05445.png)<br>
+**************
+6.<b>Ultrasonic sensor</b><br>
+<br>const int pingPin = 2; // Trigger Pin of Ultrasonic Sensor<br>
+const int echoPin = 5; // Echo Pin of Ultrasonic Sensor<br>
+<br>
+void setup() {<br>
+   Serial.begin(9600); // Starting Serial Terminal<br>
+}<br>
+
+void loop() {<br>
+   long duration, inches, cm;<br>
+   pinMode(pingPin, OUTPUT);<br>
+   digitalWrite(pingPin, LOW);<br>
+   delayMicroseconds(2);<br>
+   digitalWrite(pingPin, HIGH);<br>
+   delayMicroseconds(10);<br>
+   digitalWrite(pingPin, LOW);<br>
+   pinMode(echoPin, INPUT);<br>
+   duration = pulseIn(echoPin, HIGH);<br>
+   inches = microsecondsToInches(duration);<br>
+   cm = microsecondsToCentimeters(duration);<br>
+   Serial.print("the distance is");<br>
+   Serial.print(inches);<br>
+   Serial.print("in, ");<br>
+   Serial.print(cm);<br>
+   Serial.print("cm");<br>
+   Serial.println();<br>
+   delay(100);<br>
+}<br>
+
+long microsecondsToInches(long microseconds) {<br>
+   return microseconds / 74 / 2;<br>
+}<br>
+
+long microsecondsToCentimeters(long microseconds) {<br>
+   return microseconds / 29 / 2;<br>
+}<br>
+
+
+
+
+
+
+![image](https://user-images.githubusercontent.com/97940277/174776916-0086423f-0e71-4610-b8d2-87bf6066ecf4.png)<br>
+
 
 
 
