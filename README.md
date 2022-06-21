@@ -181,6 +181,57 @@ long microsecondsToCentimeters(long microseconds) {<br>
 
 ![image](https://user-images.githubusercontent.com/97940277/174776916-0086423f-0e71-4610-b8d2-87bf6066ecf4.png)<br>
 
+<H2><b>Ultrasonic sensor with buzzer</b></h2><<br>br>
+// constants won't change<br>
+const int TRIG_PIN   = 6; // Arduino pin connected to Ultrasonic Sensor's TRIG pin<br>
+const int ECHO_PIN   = 7; // Arduino pin connected to Ultrasonic Sensor's ECHO pin<br>
+const int BUZZER_PIN = 3; // Arduino pin connected to Piezo Buzzer's pin<br>
+const int DISTANCE_THRESHOLD = 50; // centimeters<br>
+<br>
+// variables will change:<br>
+float duration_us, distance_cm;<br>
+
+void setup() {<br>
+  Serial.begin (9600);         // initialize serial port<br>
+  pinMode(TRIG_PIN, OUTPUT);   // set arduino pin to output mode<br>
+  pinMode(ECHO_PIN, INPUT);    // set arduino pin to input mode<br>
+  pinMode(BUZZER_PIN, OUTPUT); // set arduino pin to output mode<br>
+}
+
+void loop() {<br>
+  // generate 10-microsecond pulse to TRIG pin<br>
+  digitalWrite(TRIG_PIN, HIGH);<br>
+  delayMicroseconds(10);<br>
+  digitalWrite(TRIG_PIN, LOW);<br>
+
+  // measure duration of pulse from ECHO pin<br>
+  duration_us = pulseIn(ECHO_PIN, HIGH);<br>
+  // calculate the distance<br>
+  distance_cm = 0.017 * duration_us;<br>
+
+  if(distance_cm < DISTANCE_THRESHOLD)<br>
+   { digitalWrite(BUZZER_PIN, HIGH);<br>
+    tone(BUZZER_PIN,1000);<br>
+ } // turn on Piezo Buzzer<br>
+  else<br>
+    digitalWrite(BUZZER_PIN, LOW);  // turn off Piezo Buzzer<br>
+
+  // print the value to Serial Monitor<br>
+  Serial.print("distance: ");<br>
+  Serial.print(distance_cm);<br>
+  Serial.println(" cm");<br>
+
+  delay(500);<br>
+}<br>
+
+
+
+
+
+
+
+![image](https://user-images.githubusercontent.com/97940277/174784004-d5f12b64-16ed-44f1-8695-d5b3cc4fdb96.png)
+
 
 
 
