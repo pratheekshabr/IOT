@@ -209,12 +209,16 @@ void loop() {<br>
   // calculate the distance<br>
   distance_cm = 0.017 * duration_us;<br>
 
-  if(distance_cm < DISTANCE_THRESHOLD)<br>
-   { digitalWrite(BUZZER_PIN, HIGH);<br>
-    tone(BUZZER_PIN,1000);<br>
- } // turn on Piezo Buzzer<br>
-  else<br>
-    digitalWrite(BUZZER_PIN, LOW);  // turn off Piezo Buzzer<br>
+    if(distance_cm < DISTANCE_THRESHOLD)
+   { digitalWrite(BUZZER_PIN, HIGH);
+    tone(BUZZER_PIN,1000);
+ } // turn on Piezo Buzzer
+  else
+  {
+    digitalWrite(BUZZER_PIN, LOW); 
+   noTone(BUZZER_PIN);    
+  }    // turn off Piezo Buzzer
+
 
   // print the value to Serial Monitor<br>
   Serial.print("distance: ");<br>
