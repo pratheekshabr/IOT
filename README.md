@@ -181,7 +181,7 @@ long microsecondsToCentimeters(long microseconds) {<br>
 
 ![image](https://user-images.githubusercontent.com/97940277/174776916-0086423f-0e71-4610-b8d2-87bf6066ecf4.png)<br>
 
-<H2><b>Ultrasonic sensor with buzzer</b></h2><<br>br>
+<h2><b>Ultrasonic sensor with buzzer</b></h2><<br>
 // constants won't change<br>
 const int TRIG_PIN   = 6; // Arduino pin connected to Ultrasonic Sensor's TRIG pin<br>
 const int ECHO_PIN   = 7; // Arduino pin connected to Ultrasonic Sensor's ECHO pin<br>
@@ -223,12 +223,6 @@ void loop() {<br>
 
   delay(500);<br>
 }<br>
-
-
-
-
-
-
 
 ![image](https://user-images.githubusercontent.com/97940277/174784004-d5f12b64-16ed-44f1-8695-d5b3cc4fdb96.png)
 
