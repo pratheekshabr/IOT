@@ -40,7 +40,7 @@ void loop()<br>
   delay(1000);<br>
 }<br>
 
-
+********************************************
 <b>servo motor using for loop</b><br>
 // Include the Servo library <br>
 #include <Servo.h> <br>
@@ -69,7 +69,7 @@ void setup() {<br>
   } <br>
   }<br>
   ![image](https://user-images.githubusercontent.com/97940277/174584875-35b401b7-55e5-4a0f-9f1f-1b2b7272c518.png)<br>
-
+*********************************
  <b> servo motor and slide potentiometer</b><br><br>
   #include <Servo.h><br>
 Servo Servo1;<br>
@@ -89,7 +89,7 @@ void loop()<br>
 }<br>
 output:<br>
 ![image](https://user-images.githubusercontent.com/97940277/174588958-e1243d5b-fd7e-4f3a-b3a1-ff40647dadcd.png)<br>
-
+***********************************
 
 5.<b>Buzzer arduino resistor</b><br>
 void setup() {pinMode(5, OUTPUT);<br>
@@ -105,7 +105,7 @@ delay(1000);  // put your main code here, to run repeatedly:<br>
 }<br>
 ![image](https://user-images.githubusercontent.com/97940277/174762286-3f8858b0-13d7-4f22-a71f-e1a40d2c6bdf.png)<br>
 
-
+**************************************************
 <b>buzzer with button</b><br><br><br>
 const int Button_Pin=7;<br><br>
 const int Buzzer_Pin=3;<br><br>
@@ -177,10 +177,6 @@ long microsecondsToInches(long microseconds) {<br>
 long microsecondsToCentimeters(long microseconds) {<br>
    return microseconds / 29 / 2;<br>
 }<br>
-
-
-
-
 
 
 ![image](https://user-images.githubusercontent.com/97940277/174776916-0086423f-0e71-4610-b8d2-87bf6066ecf4.png)<br>
