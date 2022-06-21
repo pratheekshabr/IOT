@@ -91,6 +91,59 @@ output:<br>
 ![image](https://user-images.githubusercontent.com/97940277/174588958-e1243d5b-fd7e-4f3a-b3a1-ff40647dadcd.png)<br>
 
 
+5.Buzzer arduino resistor<br>
+void setup() {pinMode(5, OUTPUT);<br>
+  // put your setup code here, to run once:<br>
+
+}<br>
+
+void loop() {<br><br>
+tone(5,1000);<br>
+delay(10000);<br>
+noTone(5);<br>
+delay(1000);  // put your main code here, to run repeatedly:<br>
+}<br>
+![image](https://user-images.githubusercontent.com/97940277/174762286-3f8858b0-13d7-4f22-a71f-e1a40d2c6bdf.png)<br>
+
+
+<b>buzzer with button</b><br><br><br>
+const int Button_Pin=7;<br><br>
+const int Buzzer_Pin=3;<br><br>
+void setup() {<br><br>
+  Serial.begin(9600);<br><br>
+  pinMode(Button_Pin,INPUT_PULLUP);<br><br>
+  pinMode(Buzzer_Pin,OUTPUT);<br>
+
+  // put your setup code here, to run once:<br>
+
+}<br>
+<br>
+void loop() {<br>
+  int buttonState=digitalRead(Button_Pin);<br>
+  if(buttonState==LOW)<br>
+  {<br>
+    //Serial.println("the button is being pressed");<br>
+    digitalWrite(Buzzer_Pin,HIGH);<br>
+    tone(Buzzer_Pin,1000);<br>
+  
+  }<br>
+  else<br>
+  if(buttonState==HIGH)<br>
+  {<br>
+     //Serial.println("the button is being unpressed");<br>
+      digitalWrite(Buzzer_Pin,LOW);<br>
+      noTone(Buzzer_Pin);<br>
+      
+  }<br>
+ 
+  // put your main code here, to run repeatedly:<br>
+
+}<br>
+
+
+
+
+
 
 
   
