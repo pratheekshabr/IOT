@@ -91,7 +91,7 @@ output:<br>
 ![image](https://user-images.githubusercontent.com/97940277/174588958-e1243d5b-fd7e-4f3a-b3a1-ff40647dadcd.png)<br>
 ***********************************
 
-5.<b>Buzzer arduino resistor</b><br>
+<h2>5.<b>Buzzer arduino resistor</b></h2><br>
 void setup() {pinMode(5, OUTPUT);<br>
   // put your setup code here, to run once:<br>
 
@@ -106,7 +106,7 @@ delay(1000);  // put your main code here, to run repeatedly:<br>
 ![image](https://user-images.githubusercontent.com/97940277/174762286-3f8858b0-13d7-4f22-a71f-e1a40d2c6bdf.png)<br>
 
 **************************************************
-<b>buzzer with button</b><br><br><br>
+<h2><b>buzzer with button</b></h2><br><br><br>
 const int Button_Pin=7;<br><br>
 const int Buzzer_Pin=3;<br><br>
 void setup() {<br><br>
@@ -141,7 +141,7 @@ void loop() {<br>
 }<br>
 ![image](https://user-images.githubusercontent.com/97940277/174771113-952423cd-a099-4c5d-976d-09ac6ca05445.png)<br>
 **************
-6.<b>Ultrasonic sensor</b><br>
+<h2>6.<b>Ultrasonic sensor</b></h2><br>
 <br>const int pingPin = 2; // Trigger Pin of Ultrasonic Sensor<br>
 const int echoPin = 5; // Echo Pin of Ultrasonic Sensor<br>
 <br>
