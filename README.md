@@ -70,7 +70,7 @@ void setup() {<br>
   }<br>
   ![image](https://user-images.githubusercontent.com/97940277/174584875-35b401b7-55e5-4a0f-9f1f-1b2b7272c518.png)<br>
 *********************************
- <b> servo motor and slide potentiometer</b><br><br>
+ <h2><b> servo motor and slide potentiometer</b></h2><br><br>
   #include <Servo.h><br>
 Servo Servo1;<br>
 int potpin=A0;<br>
