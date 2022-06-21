@@ -41,7 +41,7 @@ void loop()<br>
 }<br>
 
 ********************************************
-<b>servo motor using for loop</b><br>
+<h2><b>servo motor using for loop</b></h2><br>
 // Include the Servo library <br>
 #include <Servo.h> <br>
  int servoPin=3;<br>
