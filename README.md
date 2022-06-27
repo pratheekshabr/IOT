@@ -22,7 +22,40 @@ delay(1000);<br>
 
 }<br>
 ![image](https://user-images.githubusercontent.com/97940277/174572324-03480b82-d883-404c-9309-0e20fb32557c.png)<br>
+******************************
+   <b><h2>RGB</h2></b><br>
+  void setup() {<br>
+  // put your setup code here, to run once:<br>
+  pinMode(13, OUTPUT);<br>
+  pinMode(10, OUTPUT);<br>
+  pinMode(8, OUTPUT);<br>
+  }
+void loop() {<br>
+  // put your main code here, to run repeatedly:<br>
+ displayColor(0b100);<br>
+ delay(1000);<br>
+ displayColor(0b010);<br>
+ delay(1000);<br>
+displayColor(0b001);<br>
+delay(1000);<br>
+displayColor(0b101);<br>
+delay(1000);<br>
+displayColor(0b011);<br>
+delay(1000);<br>
+displayColor(0b110);<br>
+delay(1000);<br>
+displayColor(0b111);<br>
+delay(1000);<br>
+}<br>
+void displayColor(byte color) {<br>
+ digitalWrite(13, !bitRead(color, 2));<br>
+ digitalWrite(10, !bitRead(color, 1));<br>
+ digitalWrite(8, !bitRead(color, 0));<br>
+}<br>
+  output:<br>
+  ![image](https://user-images.githubusercontent.com/97940277/175903580-a0b0a926-0ca1-478d-b6e3-f0308ef8a8d5.png)<br>
 
+  
 **************************************
 <h1>4.<b>servo motor</b></h1><br>
 #include <Servo.h><br>
@@ -41,6 +74,8 @@ void loop()<br>
   Servo1.write(180);<br>
   delay(1000);<br>
 }<br>
+ 
+  
 
 ********************************************
 <h2><b>servo motor using for loop</b></h2><br>
