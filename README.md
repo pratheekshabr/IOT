@@ -1,5 +1,5 @@
 # IOT
-1.Using 3LED and registers<BR>
+<B><h2>1.Using 3LED and registers</b></h2><BR>
 void setup() {<br>
 pinMode(12, OUTPUT);<br>
 pinMode(13,OUTPUT);<br>
