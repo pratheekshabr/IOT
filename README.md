@@ -23,7 +23,7 @@ delay(1000);<br>
 }<br>
 ![image](https://user-images.githubusercontent.com/97940277/174572324-03480b82-d883-404c-9309-0e20fb32557c.png)<br>
 ******************************
-   <b><h2>RGB</h2></b><br>
+   <b><h2>2.RGB</h2></b><br>
   void setup() {<br>
   // put your setup code here, to run once:<br>
   pinMode(13, OUTPUT);<br>
