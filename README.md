@@ -319,7 +319,10 @@ delay(100);<br>
  Output:<br>
   ![image](https://user-images.githubusercontent.com/97940277/175915676-8df399a4-e320-49a7-bc20-cf6443a1425f.png)<br>
 
-  
+<h2>Two Ultrasonic sensor</h2></br>
+
+  ![image](https://user-images.githubusercontent.com/97940277/175921958-3dad1c99-c998-47e0-9702-0a514ce96d30.png)
+
 
 
 
