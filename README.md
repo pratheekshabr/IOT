@@ -266,8 +266,9 @@ void loop() {<br>
 }<br>
 
 ![image](https://user-images.githubusercontent.com/97940277/174784004-d5f12b64-16ed-44f1-8695-d5b3cc4fdb96.png)<br>
-  
+************************
 <br> <b><h2>11.Ultrasonic sensor with buzzer</h2></b><br>
+  *************************
   int const trigPin = 9;<br>
 int const echoPin = 10;<br>
 int const buzzPin = 2;<br>
