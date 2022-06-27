@@ -265,8 +265,57 @@ void loop() {<br>
   delay(500);<br>
 }<br>
 
-![image](https://user-images.githubusercontent.com/97940277/174784004-d5f12b64-16ed-44f1-8695-d5b3cc4fdb96.png)
+![image](https://user-images.githubusercontent.com/97940277/174784004-d5f12b64-16ed-44f1-8695-d5b3cc4fdb96.png)<br>
+  
+<br> <b><h2>11.Ultrasonic sensor with buzzer</h2></b><br>
+  int const trigPin = 9;<br>
+int const echoPin = 10;<br>
+int const buzzPin = 2;<br>
+int const ledPin = 3;<br>
+long duration;<br>
+int distance;<br>
+const int DISTANCE_THRESHOLD = 100; <br>
+void setup()<br>
+{<br>
+Serial.begin (9600); <br> <br>
+pinMode(trigPin, OUTPUT); // trig pin will have pulses output<br>
+pinMode(echoPin, INPUT); // echo pin should be input to get pulse width<br>
+pinMode(buzzPin, OUTPUT);<br>
+pinMode(ledPin, OUTPUT); // buzz pin is output to control buzzering<br>
+}<br>
+void loop()<br>
+{<br>
+// Duration will be the input pulse width and distance will be the distance to the obstacle in centimeters<br>
+int duration, distance;<br>
+// Output pulse with 1ms width on trigPin<br>
+digitalWrite(trigPin, HIGH);<br>
+delay(1);<br>
+digitalWrite(trigPin, LOW);<br>
+// Measure the pulse input in echo pin<br>
+duration = pulseIn(echoPin, HIGH);<br>
+// Distance is half the duration devided by 29.1 (from datasheet)<br>
+distance= 0.017 * duration;<br>
+// if distance less than 0.5 meter and more than 0 (0 or less means over range)<br>
+if (distance>DISTANCE_THRESHOLD) <br>
+{<br>
+// Buzz<br>
+tone(2,500);<br>
+digitalWrite(buzzPin, HIGH);<br>
+digitalWrite(ledPin, HIGH);<br>
+} else {<br><br>
+// Don't buzz<br>
+noTone(2);<br>
+digitalWrite(buzzPin, LOW);<br>
+digitalWrite(ledPin, LOW);<br>
+}<br>
+// Waiting 60 ms won't hurt any one<br>
+//Serial.print("distance: ");<br>
+//Serial.print(distance);<br>
+//Serial.println(" cm");<br>
 
+delay(100);<br>
+}<br>
+  
 
 
 
