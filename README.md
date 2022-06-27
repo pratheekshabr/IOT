@@ -1,5 +1,7 @@
 # IOT
-1.void setup() {pinMode(12, OUTPUT);<br>
+1.Using 3LED and registers<BR>
+void setup() {<br>
+pinMode(12, OUTPUT);<br>
 pinMode(13,OUTPUT);<br>
 pinMode(8, OUTPUT);<br>
   // put your setup code here, to run once:<br>
