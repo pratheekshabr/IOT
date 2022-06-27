@@ -315,6 +315,9 @@ digitalWrite(ledPin, LOW);<br>
 
 delay(100);<br>
 }<br>
+ Output:<br>
+  ![image](https://user-images.githubusercontent.com/97940277/175915676-8df399a4-e320-49a7-bc20-cf6443a1425f.png)<br>
+
   
 
 
