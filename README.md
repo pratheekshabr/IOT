@@ -78,7 +78,7 @@ void loop()<br>
   
 
 ********************************************
-<h2><b>servo motor using for loop</b></h2><br>
+<h2><b>5.servo motor using for loop</b></h2><br>
 // Include the Servo library <br>
 #include <Servo.h> <br>
  int servoPin=3;<br>
@@ -107,7 +107,7 @@ void setup() {<br>
   }<br>
   ![image](https://user-images.githubusercontent.com/97940277/174584875-35b401b7-55e5-4a0f-9f1f-1b2b7272c518.png)<br>
 *********************************
- <h2><b> servo motor and slide potentiometer</b></h2><br><br>
+ <h2><b> 6.servo motor and slide potentiometer</b></h2><br><br>
   #include <Servo.h><br>
 Servo Servo1;<br>
 int potpin=A0;<br>
@@ -128,7 +128,7 @@ output:<br>
 ![image](https://user-images.githubusercontent.com/97940277/174588958-e1243d5b-fd7e-4f3a-b3a1-ff40647dadcd.png)<br>
 ***********************************
 
-<h2>5.<b>Buzzer arduino resistor</b></h2><br>
+<h2>.<b>Buzzer arduino resistor</b></h2><br>
 void setup() {pinMode(5, OUTPUT);<br>
   // put your setup code here, to run once:<br>
 
