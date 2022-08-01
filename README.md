@@ -323,6 +323,33 @@ delay(100);<br>
 
   ![image](https://user-images.githubusercontent.com/97940277/175921958-3dad1c99-c998-47e0-9702-0a514ce96d30.png)
 
+**HARDWARE**<br>
+**IR SENSOR**<br>
+int ir=D5;<br>
+int led=D6;
+void setup() {<br>
+  // put your setup code here, to run once:<br>
+  pinMode(ir,INPUT);<br>
+    pinMode(led,OUTPUT);<br>
+    Serial.begin(9600);<br>
+    
+}<br>
+
+void loop() {<br>
+  // put your main code here, to run repeatedly:<br>
+  int irvalue=digitalRead(ir);<br>
+  if(irvalue==LOW)<br>
+  {<br>
+    Serial.println("LOW");<br>
+    digitalWrite(led,HIGH);<br>
+  }<br>
+  else<br>
+  {<br>
+    Serial.println("HIGH");<br>
+    digitalWrite(led,LOW);<br>
+  }<br>
+delay(100);<br>
+}<br>
 
 
 
